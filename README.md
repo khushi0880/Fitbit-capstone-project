@@ -15,12 +15,23 @@ The onlt dataset I have used for this project is FitBit Fitness Tracker Data
 
 ### Setting up my environment
 Note:  setting up my R environment by loading packages required
-
+```r
+install.packages(tidyverse)
+install.packages(skimr)
+install.packages(janitor)
+install.packages(readr)
+install.packages(ggplot2)
+install.packages(plotrix)
+install.packages(dplyr)
+install.packages(scales)
+```
 #### Importing Data
 Note: Importing these 3 CSV files- 
 1. daily_activity [Download Here](dailySteps_merged)
 3. sleepDay_merged [Download Here](sleepDay_merged)
 4. hourlySteps_merged [Download Here](hourlySteps_merged)
+```r
+
 
 ## Data Exploration
 Note: Cheking for column names and data types. Taking glimpse of dataset
