@@ -28,9 +28,9 @@ install.packages(scales)
 ```
 #### Importing Data
 Note: Importing these 3 CSV files- 
-1. daily_activity [Download Here](dailyActivity_merged.csv)
-3. sleepDay_merged [Download Here](sleepDay_merged)
-4. hourlySteps_merged [Download Here](hourlySteps_merged)
+1. daily_activity [Download Here](https://drive.google.com/file/d/10uLi4nSDPi70wTypFHst_HjNkY8F7YCs/view?usp=drive_link)
+3. sleepDay_merged [Download Here](https://drive.google.com/file/d/1TVqEDO3gZc5sOuocfUC0CF8mgHmmXz6C/view?usp=drive_link)
+4. hourlySteps_merged [Download Here](https://drive.google.com/file/d/1FD3EgxH0c8NhO1nCusEMxgcZwZ5ahBpq/view?usp=drive_link)
 ```r
 daily_activity <- read_csv("Fitabase Data 4.12.16-5.12.16/inputfitbitFitabase Data 4.12.16-5.12.16dailyActivity_merged.csv.csv")
 sleepDay_merged <- read_csv("Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
@@ -120,7 +120,7 @@ piepercent<- round(100 * slices / sum(slices), 1)
 lbls <- paste(lbls, piepercent, "%",sep=" ")
 pie3D(slices,labels=lbls,labelcex = 0.75,main="User Distribution Pie Chart")
 ```
-- Including Plot [Download Here](Rplot)
+- Including Plot [Download Here](https://drive.google.com/file/d/1ycpf4BymQ-hEh70KRE2fF224nKk502om/view?usp=drive_link)
 2. Finding out relation between calories burnt and user type
 ```r
 usertype_calories <- user_type %>% 
@@ -133,7 +133,7 @@ ggplot(usertype_calories, aes(type_of_user, mean_calories, fill=type_of_user)) +
   geom_boxplot()+
   labs(title = "Calories burned per User Type")
 ```
-- Including Plot [Download Here](Rplot01)
+- Including Plot [Download Here](https://drive.google.com/file/d/1eax-gawsij2ntCHRgbWRRZLTje-wZwNT/view?usp=drive_link)
 3. Finding correlation between the number of steps and calories burned per day
 ```r
 steps_vs_calories <- activity_and_sleep %>% 
@@ -148,7 +148,7 @@ ggplot(steps_vs_calories)+
   geom_smooth()+
   labs(title = "Steps vs Calories")
 ```
-- Including Plot [Download Here](Rplot03new)
+- Including Plot [Download Here](https://drive.google.com/file/d/1OljT2AKYENLBPBL7Yl_4CtpZECZGfD-S/view?usp=drive_link)
 4. Figuring out relation between user type and sleep quality
 ```r
 sleep_habbit <- user_type %>% 
@@ -166,7 +166,7 @@ ggplot(sleep_habbit)+
   aes(sleep, fill = type_of_user)+
   geom_bar()
 ```
-- Including Plot [Download Here](Rplot02)
+- Including Plot [Download Here](https://drive.google.com/file/d/1J9eA7P60VJhuLrM7Irfr-KI3UqGa83Mp/view?usp=drive_link)
 3. Devise usage per month
 ```{r}
 devise_usage <- activity_and_sleep %>% 
@@ -192,7 +192,7 @@ labels <- c("Medium use", "Little use", "High use")
 values <- c(3, 9, 12)
 pie(values, labels = paste(labels, "-", round(values/sum(values)*100), "%"), col = rainbow(length(values)), main = "Devise Usage")
 ```
-- Including Plot [Download Here](Rplot04)
+- Including Plot [Download Here](https://drive.google.com/file/d/1mNpmS_jlRBSwyr3oElESKC_dR0fZVIR0/view?usp=drive_link)
 ## Insights
 1. There is a key relation between steps and calories burned per day. People that are on a journy to lose weight can be motivated to make more steps a day through push notifications.
 2. increase in activity can improve sleep.
