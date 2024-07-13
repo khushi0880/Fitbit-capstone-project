@@ -28,9 +28,9 @@ install.packages(scales)
 ```
 #### Importing Data
 Note: Importing these 3 CSV files- 
-1. daily_activity [Download Here](https://drive.google.com/file/d/10uLi4nSDPi70wTypFHst_HjNkY8F7YCs/view?usp=drive_link)
+1. daily_activity [Download Here](https://drive.google.com/file/d/1K-sYq3hrD_WG3ru0Ghav7D7kc1EjHRlO/view?usp=sharing)
 3. sleepDay_merged [Download Here](https://drive.google.com/file/d/1TVqEDO3gZc5sOuocfUC0CF8mgHmmXz6C/view?usp=drive_link)
-4. hourlySteps_merged [Download Here](https://drive.google.com/file/d/1FD3EgxH0c8NhO1nCusEMxgcZwZ5ahBpq/view?usp=drive_link)
+4. hourlySteps_merged [Download Here](https://drive.google.com/file/d/1jOTKQjk9BLNqpcZF4kH64EpS_zqkoWVo/view?usp=sharing)
 ```r
 daily_activity <- read_csv("Fitabase Data 4.12.16-5.12.16/inputfitbitFitabase Data 4.12.16-5.12.16dailyActivity_merged.csv.csv")
 sleepDay_merged <- read_csv("Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
